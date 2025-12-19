@@ -1,0 +1,59 @@
+# =============================================================================
+# Docker Ignore - Backend
+# =============================================================================
+
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build output
+dist
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Test coverage
+coverage
+.nyc_output
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files (loaded at runtime)
+.env
+.env.local
+.env.*.local
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Documentation
+*.md
+docs
+
+# Test files
+test
+*.spec.ts
+*.test.ts
+__tests__

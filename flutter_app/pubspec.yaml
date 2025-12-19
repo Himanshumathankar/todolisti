@@ -1,0 +1,93 @@
+name: todolisti
+description: A unified productivity platform combining calendar, tasks, and ADHD-friendly UX.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management - Riverpod for reactive, testable state
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Navigation - Declarative routing with deep link support
+  go_router: ^13.0.1
+  
+  # Local Database - Type-safe SQLite with reactive streams
+  drift: ^2.14.1
+  sqlite3_flutter_libs: ^0.5.18
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # Network - HTTP client with interceptors
+  dio: ^5.4.0
+  
+  # Code Generation - Immutable data classes
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  
+  # Authentication
+  google_sign_in: ^6.2.1
+  flutter_secure_storage: ^9.0.0
+  
+  # UI Components
+  cupertino_icons: ^1.0.6
+  flutter_animate: ^4.3.0
+  table_calendar: ^3.0.9
+  flutter_slidable: ^3.0.1
+  reorderable_grid_view: ^2.2.8
+  
+  # Notifications
+  flutter_local_notifications: ^18.0.0
+  
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.2.2
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+  connectivity_plus: ^5.0.2
+  
+  # Logging & Monitoring
+  logger: ^2.0.2+1
+  sentry_flutter: ^8.0.0
+  shared_preferences: ^2.5.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  
+  # Code Generation
+  build_runner: ^2.4.8
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+  drift_dev: ^2.14.1
+  
+  # Testing
+  mockito: ^5.4.4
+  mocktail: ^1.0.2
+
+flutter:
+  uses-material-design: true
+  
+  # TODO: Add assets when available
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+  
+  # TODO: Add Inter font files to assets/fonts/ and uncomment
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #         weight: 700
